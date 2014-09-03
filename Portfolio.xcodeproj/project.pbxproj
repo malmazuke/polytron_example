@@ -47,8 +47,8 @@
 		9B23F05419B6E4A7003611A3 /* MGFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGFAppDelegate.m; sourceTree = "<group>"; };
 		9B23F05719B6E4A7003611A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9B23F05A19B6E4A7003611A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9B23F05C19B6E4A7003611A3 /* MGFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGFViewController.h; sourceTree = "<group>"; };
-		9B23F05D19B6E4A7003611A3 /* MGFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGFViewController.m; sourceTree = "<group>"; };
+		9B23F05C19B6E4A7003611A3 /* MGFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MGFViewController.h; path = ViewControllers/MGFViewController.h; sourceTree = "<group>"; };
+		9B23F05D19B6E4A7003611A3 /* MGFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MGFViewController.m; path = ViewControllers/MGFViewController.m; sourceTree = "<group>"; };
 		9B23F05F19B6E4A7003611A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B23F06519B6E4A7003611A3 /* PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B23F06619B6E4A7003611A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
