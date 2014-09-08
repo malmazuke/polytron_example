@@ -118,8 +118,7 @@
 				9B23F05419B6E4A7003611A3 /* MGFAppDelegate.m */,
 				9B23F05619B6E4A7003611A3 /* Main_iPhone.storyboard */,
 				9B23F05919B6E4A7003611A3 /* Main_iPad.storyboard */,
-				9B23F05C19B6E4A7003611A3 /* MGFViewController.h */,
-				9B23F05D19B6E4A7003611A3 /* MGFViewController.m */,
+				9B23F07C19B6E621003611A3 /* View Controllers */,
 				9B23F05F19B6E4A7003611A3 /* Images.xcassets */,
 				9B23F04B19B6E4A7003611A3 /* Supporting Files */,
 			);
@@ -153,6 +152,15 @@
 				9B23F06F19B6E4A7003611A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B23F07C19B6E621003611A3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B23F05C19B6E4A7003611A3 /* MGFViewController.h */,
+				9B23F05D19B6E4A7003611A3 /* MGFViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
