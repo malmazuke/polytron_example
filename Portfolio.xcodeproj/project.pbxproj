@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B21060619BD83A600C2B270 /* MGFDrawPolytronViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B21060519BD83A600C2B270 /* MGFDrawPolytronViewController.m */; };
+		9B21060719BD83A600C2B270 /* MGFDrawPolytronViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B21060519BD83A600C2B270 /* MGFDrawPolytronViewController.m */; };
 		9B23F04519B6E4A7003611A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F04419B6E4A7003611A3 /* Foundation.framework */; };
 		9B23F04719B6E4A7003611A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F04619B6E4A7003611A3 /* CoreGraphics.framework */; };
 		9B23F04919B6E4A7003611A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F04819B6E4A7003611A3 /* UIKit.framework */; };
@@ -15,7 +17,7 @@
 		9B23F05519B6E4A7003611A3 /* MGFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B23F05419B6E4A7003611A3 /* MGFAppDelegate.m */; };
 		9B23F05819B6E4A7003611A3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B23F05619B6E4A7003611A3 /* Main_iPhone.storyboard */; };
 		9B23F05B19B6E4A7003611A3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B23F05919B6E4A7003611A3 /* Main_iPad.storyboard */; };
-		9B23F05E19B6E4A7003611A3 /* MGFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B23F05D19B6E4A7003611A3 /* MGFViewController.m */; };
+		9B23F05E19B6E4A7003611A3 /* MGFDrawCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B23F05D19B6E4A7003611A3 /* MGFDrawCurveViewController.m */; };
 		9B23F06019B6E4A7003611A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B23F05F19B6E4A7003611A3 /* Images.xcassets */; };
 		9B23F06719B6E4A7003611A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F06619B6E4A7003611A3 /* XCTest.framework */; };
 		9B23F06819B6E4A7003611A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B23F04419B6E4A7003611A3 /* Foundation.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B21060419BD83A600C2B270 /* MGFDrawPolytronViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGFDrawPolytronViewController.h; path = ViewControllers/MGFDrawPolytronViewController.h; sourceTree = "<group>"; };
+		9B21060519BD83A600C2B270 /* MGFDrawPolytronViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGFDrawPolytronViewController.m; path = ViewControllers/MGFDrawPolytronViewController.m; sourceTree = "<group>"; };
 		9B23F04119B6E4A7003611A3 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B23F04419B6E4A7003611A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B23F04619B6E4A7003611A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,8 +51,8 @@
 		9B23F05419B6E4A7003611A3 /* MGFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGFAppDelegate.m; sourceTree = "<group>"; };
 		9B23F05719B6E4A7003611A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9B23F05A19B6E4A7003611A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9B23F05C19B6E4A7003611A3 /* MGFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MGFViewController.h; path = ViewControllers/MGFViewController.h; sourceTree = "<group>"; };
-		9B23F05D19B6E4A7003611A3 /* MGFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MGFViewController.m; path = ViewControllers/MGFViewController.m; sourceTree = "<group>"; };
+		9B23F05C19B6E4A7003611A3 /* MGFDrawCurveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MGFDrawCurveViewController.h; path = ViewControllers/MGFDrawCurveViewController.h; sourceTree = "<group>"; };
+		9B23F05D19B6E4A7003611A3 /* MGFDrawCurveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MGFDrawCurveViewController.m; path = ViewControllers/MGFDrawCurveViewController.m; sourceTree = "<group>"; };
 		9B23F05F19B6E4A7003611A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B23F06519B6E4A7003611A3 /* PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B23F06619B6E4A7003611A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -157,8 +161,10 @@
 		9B23F07C19B6E621003611A3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9B23F05C19B6E4A7003611A3 /* MGFViewController.h */,
-				9B23F05D19B6E4A7003611A3 /* MGFViewController.m */,
+				9B23F05C19B6E4A7003611A3 /* MGFDrawCurveViewController.h */,
+				9B23F05D19B6E4A7003611A3 /* MGFDrawCurveViewController.m */,
+				9B21060419BD83A600C2B270 /* MGFDrawPolytronViewController.h */,
+				9B21060519BD83A600C2B270 /* MGFDrawPolytronViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -262,8 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B21060619BD83A600C2B270 /* MGFDrawPolytronViewController.m in Sources */,
 				9B23F05119B6E4A7003611A3 /* main.m in Sources */,
-				9B23F05E19B6E4A7003611A3 /* MGFViewController.m in Sources */,
+				9B23F05E19B6E4A7003611A3 /* MGFDrawCurveViewController.m in Sources */,
 				9B23F05519B6E4A7003611A3 /* MGFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B21060719BD83A600C2B270 /* MGFDrawPolytronViewController.m in Sources */,
 				9B23F07319B6E4A7003611A3 /* PortfolioTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +487,7 @@
 				9B23F07819B6E4A7003611A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B23F07919B6E4A7003611A3 /* Build configuration list for PBXNativeTarget "PortfolioTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +496,7 @@
 				9B23F07B19B6E4A7003611A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

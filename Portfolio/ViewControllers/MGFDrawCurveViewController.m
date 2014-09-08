@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Mark Feaver. All rights reserved.
 //
 
-#import "MGFViewController.h"
+#import "MGFDrawCurveViewController.h"
 
-@interface MGFViewController ()
+@interface MGFDrawCurveViewController ()
 
 @end
 
-@implementation MGFViewController
+@implementation MGFDrawCurveViewController
 
 - (void)viewDidLoad
 {
