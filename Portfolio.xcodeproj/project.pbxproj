@@ -217,6 +217,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Mark Feaver";
 				TargetAttributes = {
+					9B23F04019B6E4A7003611A3 = {
+						DevelopmentTeam = 96GA29E953;
+					};
 					9B23F06419B6E4A7003611A3 = {
 						TestTargetID = 9B23F04019B6E4A7003611A3;
 					};
@@ -407,10 +410,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Portfolio/Portfolio-Prefix.pch";
 				INFOPLIST_FILE = "Portfolio/Portfolio-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -420,10 +426,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Portfolio/Portfolio-Prefix.pch";
 				INFOPLIST_FILE = "Portfolio/Portfolio-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

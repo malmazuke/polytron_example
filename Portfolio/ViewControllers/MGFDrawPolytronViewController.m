@@ -71,7 +71,7 @@ static CGFloat const MGFPolytronLogoHeight    = 216.0;
     
     [self.view.layer addSublayer:secondP];
     CABasicAnimation *animation2 = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation2.duration    = 1.4;
+    animation2.duration    = 1.2;
     animation2.repeatCount = 1.0;
     animation2.fromValue   = [NSNumber numberWithFloat:0.0];
     animation2.toValue     = [NSNumber numberWithFloat:1.0];
@@ -91,7 +91,7 @@ static CGFloat const MGFPolytronLogoHeight    = 216.0;
     
     [self.view.layer addSublayer:thirdP];
     CABasicAnimation *animation3 = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation3.duration    = 1.8;
+    animation3.duration    = 1.4;
     animation3.repeatCount = 1.0;
     animation3.fromValue   = [NSNumber numberWithFloat:0.0];
     animation3.toValue     = [NSNumber numberWithFloat:1.0];
@@ -111,7 +111,7 @@ static CGFloat const MGFPolytronLogoHeight    = 216.0;
     
     [self.view.layer addSublayer:fourthP];
     CABasicAnimation *animation4 = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation4.duration    = 2.2;
+    animation4.duration    = 1.6;
     animation4.repeatCount = 1.0;
     animation4.fromValue   = [NSNumber numberWithFloat:0.0];
     animation4.toValue     = [NSNumber numberWithFloat:1.0];
