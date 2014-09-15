@@ -14,10 +14,6 @@ static CGFloat const MGFPolytronInnerRadius   = 28.0;
 #define DEGREES_TO_RADIANS(degrees) ((M_PI / 180.0) * degrees)
 #define RADIANS_TO_DEGREES(radians) ((180.0/ M_PI)  * radians)
 
-@interface MGFDrawPolytronViewController ()
-
-@end
-
 @implementation MGFDrawPolytronViewController
 
 - (void)viewDidLoad
