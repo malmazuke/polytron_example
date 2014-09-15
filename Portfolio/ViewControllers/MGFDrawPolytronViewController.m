@@ -8,8 +8,8 @@
 
 #import "MGFDrawPolytronViewController.h"
 
-static CGFloat const MGFPolytronLineWidth     = 20.0;
-static CGFloat const MGFPolytronInnerRadius   = 28.0;
+static CGFloat const MGFPolytronLineWidth     = 19.0;
+static CGFloat const MGFPolytronInnerRadius   = MGFPolytronLineWidth * 2.0;
 
 #define DEGREES_TO_RADIANS(degrees) ((M_PI / 180.0) * degrees)
 #define RADIANS_TO_DEGREES(radians) ((180.0/ M_PI)  * radians)
@@ -23,43 +23,45 @@ static CGFloat const MGFPolytronInnerRadius   = 28.0;
     [self mf_drawPolytronLogo];
     
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"polytron_reference"]];
-//    imageView.frame = self.view.frame;
+//    imageView.frame = CGRectMake(self.view.frame.origin.x - 3.0, self.view.frame.origin.y + 33.5, self.view.frame.size.width, self.view.frame.size.height);
 //    [self.view addSubview:imageView];
-//    imageView.alpha = 0.5;
+//    imageView.alpha = 0.3;
 }
 
 - (void)mf_drawPolytronLogo
 {
     CGFloat logoHeight = (MGFPolytronInnerRadius + MGFPolytronLineWidth * 3.0) * 2 + MGFPolytronLineWidth;
+    CGPoint logoCenter = CGPointMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame));
     // Start outside in
     // Fourth shape
-    [self mf_drawPWithRadius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 3.0)
-                      height:logoHeight
-                    duration:1.6
-                       color:[UIColor colorWithRed:(0.0/255.0) green:(170.0/255.0) blue:(255.0/255.0) alpha:1.0].CGColor];
+    [self mf_drawPWithPosition:logoCenter
+                        radius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 3.0)
+                        height:logoHeight
+                      duration:1.6
+                         color:[UIColor colorWithRed:(0.0/255.0) green:(170.0/255.0) blue:(255.0/255.0) alpha:1.0].CGColor];
     // Third shape
-    [self mf_drawPWithRadius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 2.0)
-                      height:logoHeight
-                    duration:1.4
-                       color:[UIColor colorWithRed:(255.0/255.0) green:(255.0/255.0) blue:(0.0/255.0) alpha:1.0].CGColor];
+    [self mf_drawPWithPosition:logoCenter
+                        radius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 2.0)
+                        height:logoHeight
+                      duration:1.4
+                         color:[UIColor colorWithRed:(255.0/255.0) green:(255.0/255.0) blue:(0.0/255.0) alpha:1.0].CGColor];
     // Second shape
-    [self mf_drawPWithRadius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 1.0)
-                      height:logoHeight
-                    duration:1.2
-                       color:[UIColor colorWithRed:(254.0/255.0) green:(106.0/255.0) blue:(0.0/255.0) alpha:1.0].CGColor];
+    [self mf_drawPWithPosition:logoCenter
+                        radius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 1.0)
+                        height:logoHeight
+                      duration:1.2
+                         color:[UIColor colorWithRed:(254.0/255.0) green:(106.0/255.0) blue:(0.0/255.0) alpha:1.0].CGColor];
     // First shape
-    [self mf_drawPWithRadius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 0.0)
-                      height:logoHeight
-                    duration:1.0
-                       color:[UIColor blackColor].CGColor];
+    [self mf_drawPWithPosition:logoCenter
+                        radius:(MGFPolytronInnerRadius + MGFPolytronLineWidth * 0.0)
+                        height:logoHeight
+                      duration:1.0
+                         color:[UIColor blackColor].CGColor];
 }
 
 // TODO: Factory?
-- (void)mf_drawPWithRadius:(CGFloat)radius height:(CGFloat)height duration:(CGFloat)duration color:(CGColorRef)color
+- (void)mf_drawPWithPosition:(CGPoint)position radius:(CGFloat)radius height:(CGFloat)height duration:(CGFloat)duration color:(CGColorRef)color
 {
-    CGFloat viewWidth   = CGRectGetWidth (self.view.frame);
-    CGFloat viewHeight  = CGRectGetHeight(self.view.frame);
-    
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.duration    = duration;
     animation.repeatCount = 1.0;
@@ -70,7 +72,7 @@ static CGFloat const MGFPolytronInnerRadius   = 28.0;
     CGPathRef path = [self mf_generatePWithRadius:radius andHeight:height];
     CAShapeLayer *innerP = [CAShapeLayer layer];
     innerP.path        = path;
-    innerP.position    = CGPointMake(viewWidth/2.0, viewHeight/2.0 - 33.5);
+    innerP.position    = position;
     innerP.lineWidth   = MGFPolytronLineWidth;
     innerP.fillColor   = [UIColor clearColor].CGColor;
     innerP.strokeColor = color;
