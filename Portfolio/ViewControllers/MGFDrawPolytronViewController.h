@@ -10,4 +10,6 @@
 
 @interface MGFDrawPolytronViewController : UIViewController
 
+- (IBAction)isScrolling:(UIPanGestureRecognizer *)sender;
+
 @end
